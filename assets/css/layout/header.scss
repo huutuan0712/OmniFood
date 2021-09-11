@@ -1,0 +1,159 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.header {
+  padding: 2.5rem 4.8rem;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      height: 2.2rem;
+      @include breakpoint(568) {
+        height: 1.8rem;
+      }
+    }
+    .nabar {
+      display: flex;
+      @include breakpoint(992) {
+        display: none;
+      }
+      .list-item {
+        margin-right: 30px;
+        .item {
+          font-size: 1.7rem;
+          color: #333;
+          font-family: $rubik;
+          font-weight: 500;
+        }
+        .nav-btn {
+          color: #fff;
+          background-color: $darkOrange;
+          padding: 10px 20px;
+          border-radius: 5px;
+        }
+      }
+    }
+    // moblie menu
+    .mobile-bars {
+      font-size: 30px;
+      cursor: pointer;
+      @include breakpointminmax(992, 1600) {
+        display: none;
+      }
+    }
+    .mobile-menu {
+      background-color: #fdf2e9;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 300px;
+      z-index: 99;
+      opacity: 0;
+      visibility: hidden;
+
+      @include min-breakpoint(1024) {
+        display: none;
+      }
+      .close-btn {
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        font-size: 30px;
+        cursor: pointer;
+      }
+      .menu-box {
+        .logo {
+          padding: 30px 25px;
+          img {
+            height: 2.2rem;
+            display: block;
+          }
+        }
+        .nabar-mobile {
+          margin-top: 30px;
+          .list-item {
+            margin-bottom: 20px;
+            .item {
+              padding: 10px 25px;
+              font-size: 2rem;
+              color: $darkGray;
+              font-family: $rubik;
+              font-weight: 500;
+            }
+          }
+        }
+        .social-link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          .list-item {
+            margin-right: 20px;
+            .item {
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    }
+    .mb-menu {
+      opacity: 1;
+      visibility: visible;
+      animation: FadeInright 0.5s ease-in;
+    }
+    .mobile-backdrop {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      opacity: 0;
+      visibility: hidden;
+      background: #171d22;
+      @include min-breakpoint(1024) {
+        display: none;
+      }
+    }
+    .mb-backgroud {
+      visibility: visible;
+      opacity: 0.8;
+    }
+  }
+}
+.transpanrent-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5rem 4.8rem;
+  margin: auto;
+  z-index: 99;
+  background-color: rgba(255, 255, 255, 0.97);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  animation: FadeInDown 1000ms ease-in;
+}
+@keyframes FadeInright {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes FadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

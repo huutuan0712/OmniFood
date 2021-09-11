@@ -1,0 +1,112 @@
+.banner {
+  background-color: #fdf2e9;
+  padding: 120px 0;
+  position: relative;
+  &-left {
+    @include breakpoint(992) {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .title {
+      h1 {
+        font-family: $rubik;
+        font-size: 4.8rem;
+        font-weight: 600;
+        margin-bottom: 30px;
+        color: #333;
+        @include breakpoint(992) {
+          font-size: 3rem;
+        }
+        @include breakpoint(568) {
+          font-size: 2rem;
+        }
+      }
+      p {
+        font-family: $rubik;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #555;
+        line-height: 30px;
+        letter-spacing: 0.3px;
+        @include breakpoint(992) {
+          font-size: 1.5rem;
+        }
+        @include breakpoint(568) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .btn {
+      margin-top: 50px;
+      @include breakpoint(568) {
+        display: flex;
+        flex-direction: column;
+      }
+      .btn-orange {
+        padding: 15px 20px;
+        background-color: $darkOrange;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #fff;
+        border-radius: 10px;
+        margin-right: 20px;
+        @include breakpoint(992) {
+          font-size: 1.5rem;
+        }
+        @include breakpoint(568) {
+          margin-right: 0px;
+        }
+      }
+      .btn-white {
+        padding: 15px 25px;
+        background-color: #fff;
+        font-size: 2rem;
+        font-weight: 500;
+        color: #555;
+        border-radius: 10px;
+        @include breakpoint(992) {
+          font-size: 1.5rem;
+        }
+        @include breakpoint(568) {
+          margin-top: 20px;
+        }
+      }
+    }
+    .delivered-meals {
+      margin-top: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include breakpoint(992) {
+        justify-content: center;
+      }
+      .delivered-user {
+        display: flex;
+        img {
+          border-radius: 50%;
+          width: 4.8rem;
+          height: 4.8rem;
+          border: 2px solid #fff;
+          margin-right: -1.6rem;
+        }
+      }
+      .delivered-text {
+        font-size: 1.5rem;
+        font-weight: 600;
+        span {
+          color: $darkOrange;
+        }
+        @include breakpoint(992) {
+          font-size: 1.5rem;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+  &-right {
+    margin-left: 30px;
+    img {
+      width: 100%;
+    }
+  }
+}

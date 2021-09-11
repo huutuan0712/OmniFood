@@ -1,0 +1,208 @@
+.pricing {
+  padding: 10rem 0;
+  &-top {
+    margin-bottom: 50px;
+    .orange {
+      color: $darkOrange;
+      font-size: 15px;
+      font-weight: 500;
+      @include breakpoint(992) {
+        font-size: 13px;
+      }
+    }
+    .heading {
+      color: #333;
+      font-size: 4rem;
+      font-weight: 700;
+      margin-top: 10px;
+      @include breakpoint(992) {
+        font-size: 3rem;
+      }
+      @include breakpoint(768) {
+        font-size: 2.5rem;
+      }
+      @include breakpoint(568) {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  .pricing-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include breakpoint(768) {
+      display: block;
+    }
+    .plan--starte {
+      border: 2px solid #fdf2e9;
+    }
+    .plan-prik {
+      background-color: #fdf2e9;
+    }
+    .plan-pricing {
+      padding: 5rem;
+      margin: 0 10px 0 10px;
+      border-radius: 10px;
+      position: relative;
+      overflow: hidden;
+      @include breakpoint(768) {
+        margin-bottom: 30px;
+        padding: 4rem;
+      }
+      .plan-header {
+        text-align: center;
+        margin-bottom: 30px;
+        .plan-name {
+          color: $darkOrange;
+          font-size: 20px;
+          font-weight: 600;
+          margin-bottom: 20px;
+          @include breakpoint(992) {
+            font-size: 16px;
+          }
+          @include breakpoint(768) {
+            font-size: 18px;
+          }
+        }
+        .plan-price {
+          color: #333;
+          font-size: 6rem;
+          font-weight: 600;
+          margin-bottom: 10px;
+          @include breakpoint(992) {
+            font-size: 5rem;
+          }
+
+          span {
+            font-size: 3rem;
+            font-weight: 400;
+            @include breakpoint(992) {
+              font-size: 2rem;
+            }
+          }
+        }
+        .plan-text {
+          font-size: 15px;
+          @include breakpoint(992) {
+            font-size: 11px;
+          }
+          @include breakpoint(768) {
+            font-size: 15px;
+          }
+        }
+      }
+      .list {
+        .list-item {
+          margin-bottom: 15px;
+          .orange {
+            color: $darkOrange;
+            font-size: 20px;
+            margin-right: 10px;
+            @include breakpoint(992) {
+              font-size: 15px;
+            }
+            @include breakpoint(768) {
+              font-size: 20px;
+            }
+          }
+          span {
+            font-size: 18px;
+            @include breakpoint(992) {
+              font-size: 14px;
+            }
+            @include breakpoint(768) {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+      .btn {
+        text-align: center;
+        margin-top: 50px;
+        .btn-orange {
+          padding: 15px 25px;
+          background-color: $darkOrange;
+          font-size: 20px;
+          border-radius: 10px;
+          color: #fff;
+          font-weight: 500;
+          @include breakpoint(992) {
+            font-size: 16px;
+          }
+          @include breakpoint(768) {
+            font-size: 18px;
+          }
+          @include breakpoint(568) {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+    .plan-complete::after {
+      content: "BEST VALUE";
+      position: absolute;
+      top: 6%;
+      right: -18%;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #333;
+      background-color: #ffd43b;
+      padding: 0.8rem 8rem;
+      transform: rotate(45deg);
+      @include breakpoint(992) {
+        font-size: 12px;
+        padding: 0.6rem 6rem;
+      }
+    }
+  }
+  .pricing-bottom {
+    margin-top: 40px;
+    .text-box {
+      text-align: center;
+      font-size: 15px;
+      margin-bottom: 10rem;
+      @include breakpoint(992) {
+        font-size: 13px;
+      }
+    }
+
+    .feature {
+      @include breakpoint(768) {
+        margin-bottom: 30px;
+      }
+      .icon-inner {
+        position: relative;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        font-size: 20px;
+        color: $darkOrange;
+      }
+      .icon-inner::before {
+        position: absolute;
+        content: "";
+        left: 5%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        height: 3.2rem;
+        width: 3.2rem;
+        background-color: #fdf2e9;
+        padding: 30px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      &-title {
+        font-size: 2.3rem;
+        font-weight: 600;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      &-text {
+        font-size: 17px;
+        line-height: 30px;
+      }
+    }
+  }
+}

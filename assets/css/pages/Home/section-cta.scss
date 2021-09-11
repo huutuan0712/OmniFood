@@ -1,0 +1,96 @@
+.section-cta {
+  padding: 4.8rem 0;
+  margin-bottom: 30px;
+  .cta {
+    background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    &-text-box {
+      padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+      .heading {
+        color: #333;
+        font-size: 4rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        @include breakpoint(992) {
+          font-size: 3rem;
+        }
+        @include breakpoint(768) {
+          font-size: 2.6rem;
+        }
+        @include breakpoint(568) {
+          font-size: 2.2rem;
+        }
+      }
+      .text {
+        color: #333;
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 50px;
+        @include breakpoint(992) {
+          font-size: 12px;
+        }
+      }
+    }
+    &-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 3.2rem;
+      row-gap: 2.4rem;
+      @include breakpoint(992) {
+        grid-template-columns: 1fr;
+      }
+      label {
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+        @include breakpoint(768) {
+          font-size: 12px;
+        }
+      }
+      input {
+        width: 100%;
+        padding: 1.2rem;
+        font-size: 16px;
+        color: #555;
+        border: none;
+        background-color: #fdf2e9;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 1px 2px 0px;
+        margin-top: 10px;
+        @include breakpoint(768) {
+          font-size: 14px;
+        }
+      }
+      .btn {
+        background-color: #45260a;
+        border: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 600;
+        border-radius: 10px;
+      }
+      .btn-form {
+        padding: 1.2rem;
+        background-color: #45260a;
+        align-self: end;
+      }
+      .btn:hover {
+        color: #333;
+        background-color: #fff;
+      }
+    }
+    &-img-box {
+      overflow: hidden;
+      @include breakpoint(768) {
+        display: none;
+      }
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

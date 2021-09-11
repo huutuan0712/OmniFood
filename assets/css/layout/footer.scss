@@ -1,0 +1,87 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the footer of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+  padding: 12rem 0;
+  border-top: 1px solid #eee;
+  .logo {
+    margin-bottom: 30px;
+    img {
+      height: 2.2rem;
+      @include breakpoint(992) {
+        height: 2rem;
+      }
+      @include breakpoint(568) {
+        height: 1.2rem;
+      }
+    }
+  }
+  .social {
+    display: flex;
+    margin-bottom: 50px;
+    .list-item {
+      margin-right: 20px;
+      i {
+        font-size: 20px;
+        @include breakpoint(992) {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+  .copyright {
+    font-size: 15px;
+    color: #555;
+    @include breakpoint(992) {
+      font-size: 1.3rem;
+    }
+  }
+  .address-col {
+    .heading {
+      font-size: 2.3rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      @include breakpoint(992) {
+        font-size: 2rem;
+      }
+    }
+    .contact {
+      .address {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        @include breakpoint(992) {
+          font-size: 1.4rem;
+        }
+      }
+      .link {
+        font-size: 1.6rem;
+        color: #555;
+        @include breakpoint(992) {
+          font-size: 1.3rem;
+        }
+      }
+    }
+  }
+  .nav-col {
+    .heading {
+      font-size: 2.3rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      @include breakpoint(992) {
+        font-size: 2rem;
+      }
+    }
+    .nav {
+      .list-item {
+        margin-bottom: 20px;
+        .item {
+          font-size: 1.6rem;
+          color: #555;
+          @include breakpoint(992) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+.testimonials {
+  background-color: #fdf2e9;
+  padding: 3rem 0;
+  @include breakpoint(992) {
+    .mg-auto {
+      margin-top: auto;
+      margin-bottom: auto;
+    }
+  }
+
+  .testmonials-left {
+    padding: 5rem;
+    .title {
+      margin-bottom: 40px;
+      .orange {
+        color: $darkOrange;
+        font-size: 15px;
+        font-weight: 500;
+        @include breakpoint(992) {
+          font-size: 13px;
+        }
+      }
+      .heading {
+        color: #333;
+        font-size: 4rem;
+        font-weight: 700;
+        margin-top: 10px;
+        @include breakpoint(992) {
+          font-size: 3rem;
+        }
+        @include breakpoint(568) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .mg-bt-20 {
+      margin-bottom: 20px;
+    }
+    .informetion-user {
+      .mg-bt-30 {
+        margin-bottom: 30px;
+      }
+      .user {
+        img {
+          height: 7rem;
+          border-radius: 50%;
+          margin-bottom: 20px;
+          @include breakpoint(992) {
+            height: 6rem;
+          }
+        }
+        p {
+          font-size: 17px;
+          color: #333;
+          line-height: 25px;
+          margin-bottom: 10px;
+          @include breakpoint(992) {
+            font-size: 15px;
+          }
+        }
+        span {
+          font-size: 16px;
+          @include breakpoint(992) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .testmonials-right {
+    .card-img {
+      overflow: hidden;
+      margin-bottom: 10px;
+      img {
+        width: 100%;
+        display: block;
+        transition: 0.3s;
+      }
+    }
+    .card-img img:hover {
+      transform: scale(1.1);
+    }
+  }
+}

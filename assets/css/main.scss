@@ -1,0 +1,12 @@
+@import "./abstracts/common.scss";
+// Base
+@import "./base/reset.scss", "./base/variables.scss";
+// components
+// @import './components/';
+// Layout
+@import "./layout/footer.scss", "./layout/header.scss";
+// page
+@import "./pages/Home/banner.scss", "./pages/Home/featured.scss",
+  "./pages/Home/section-how.scss", "./pages/Home/section-meals.scss",
+  "./pages/Home/section-testmonials.scss", "./pages/Home/section-pricing.scss",
+  "./pages/Home/section-cta.scss";
